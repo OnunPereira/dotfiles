@@ -29,7 +29,8 @@ brew cask install alacritty
 brew cask install firefox
 brew cask install discord
 brew cask install flycut
-brew cask install rectangle
+brew cask install amethyst
 brew cask install flux
 brew cask install keka
 brew cask install thor
+# brew cask install rectangle

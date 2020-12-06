@@ -1,9 +1,6 @@
 # Set the annoying greeting to empty
 set fish_greeting
 
-## VI mode
-fish_vi_key_bindings
-
 ## Colors
 set fish_color_error brred
 set fish_color_command green --bold

@@ -5,6 +5,7 @@ format = """
 [⎧](bold yellow)☯︎ $username\
 $hostname\
 $directory\
+$nodejs\
 $git_branch\
 $git_commit\
 $git_state\

@@ -12,6 +12,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    " Auto close HTML tags
+    Plug 'alvan/vim-closetag'
     " Status bar
     Plug 'itchyny/lightline.vim'
     " Intellisense

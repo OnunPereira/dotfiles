@@ -4,6 +4,7 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+set noshowmode
 syntax on
 set t_Co=256
 set cursorline

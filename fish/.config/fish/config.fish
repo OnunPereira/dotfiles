@@ -1,5 +1,6 @@
 # Set the annoying greeting to empty
 set fish_greeting
+set fish_key_bindings fish_user_key_bindings
 
 ## Colors
 set fish_color_error brred
@@ -16,7 +17,7 @@ alias c="$EDITOR"
 alias cat='bat --theme="Nord"'
 alias ls="exa -la"
 alias mx="tmuxinator"
-alias rl="source $HOME/.config/fish/config.fish"
+alias rl="source $HOME/dotfiles/fish/.config/fish/config.fish"
 alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
 alias vimrc="$EDITOR $HOME/dotfiles/nvim/.config/nvim/init.vim"
 

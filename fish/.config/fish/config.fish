@@ -120,7 +120,7 @@ alias gstd='git stash drop'
 
 starship init fish | source
 zoxide init fish | source
-fnm env --multi | source
+fnm env | source
 
 set -gx PATH $HOME/.cargo/bin $PATH
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths

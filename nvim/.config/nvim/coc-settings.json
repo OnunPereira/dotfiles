@@ -1,6 +1,7 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
+    "scss",
     "markdown",
     "graphql",
     "yaml",
@@ -15,6 +16,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "stylelint.filetypes": ["css", "scss", "postcss"],
   "explorer.file.showHiddenFiles": true,
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
@@ -23,6 +25,5 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "prettier.eslintIntegration": true,
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
 }

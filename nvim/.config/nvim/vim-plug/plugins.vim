@@ -31,7 +31,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Themes
     " Plug 'arcticicestudio/nord-vim'
-    Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    " Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    Plug 'morhetz/gruvbox'
 
     " Language specific
 

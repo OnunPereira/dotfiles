@@ -1,5 +1,9 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
     "css",
     "markdown",
     "graphql",
@@ -7,13 +11,6 @@
     "json",
     "python",
     "rust"
-  ],
-  "eslint.autoFixOnSave": true,
-  "eslint.filetypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
   ],
   "explorer.file.showHiddenFiles": true,
   "explorer.width": 30,

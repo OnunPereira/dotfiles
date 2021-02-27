@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "path": "/Users/nuno.pereira/Projects/app-admin"
+    },
+    {
+      "path": "/Users/nuno.pereira/Projects/app-profiles"
+    },
+    {
+      "path": "../../../Projects/diplomat"
+    },
+    {
+      "path": "../../../Projects/ambassador"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "stylelint.vscode-stylelint",
+    ],
+  },
+  "settings": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+    ],
+    "stylelint.validate": [
+      "css",
+      "postcss",
+      "sass",
+      "scss",
+    ]
+  }
+}

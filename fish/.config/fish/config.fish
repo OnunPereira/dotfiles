@@ -8,11 +8,13 @@ set fish_color_command green --bold
 set fish_color_quote yellow
 set fish_color_autosuggestion brblack
 
-## Aliases
+####### ALIASES #######
+
 set -x TERM xterm-256color
 set -gx EDITOR nvim
 set -gx VISUAL $EDITOR
 
+## General Aliases
 alias c="$EDITOR"
 alias cat='bat --theme="Nord"'
 alias ls="exa -la"
@@ -20,6 +22,10 @@ alias mx="tmuxinator"
 alias rl="source $HOME/dotfiles/fish/.config/fish/config.fish"
 alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
 alias vimrc="$EDITOR $HOME/dotfiles/nvim/.config/nvim/init.vim"
+
+## Project Aliases
+alias foam='code --extensions-dir "$HOME/dotfiles/vscode/foam/extensions" $HOME/second-brain'
+alias creact='code --extensions-dir "$HOME/dotfiles/vscode/react/extensions" $HOME/dotfiles/vscode/react/react.code-workspace'
 
 
 ####### BEGIN GIT ALIASES #######
@@ -121,4 +127,5 @@ zoxide init fish | source
 fnm env | source
 
 set -gx PATH $HOME/.cargo/bin $PATH
+set -gx PATH $HOME/.emacs.d/bin $PATH
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths

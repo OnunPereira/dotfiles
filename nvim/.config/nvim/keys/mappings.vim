@@ -27,22 +27,19 @@ nnoremap <C-Q> :wq!<CR>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Better tabbing
+" Better tabbing on selected lines
 vnoremap < <gv
 vnoremap > >gv
 
-function Splitresize()
-    let hmax = max([winwidth(0), float2nr(&columns*0.66), 90])
-    let vmax = max([winheight(0), float2nr(&lines*0.66), 25])
-    exe "vertical resize" . (min([hmax, 140]))
-    exe "resize" . (min([vmax, 60]))
-endfunction
+" Better search and replace selection
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 
 " Better window navigation
-nnoremap <C-h> <C-w>h:call Splitresize()<CR>
-nnoremap <C-j> <C-w>j:call Splitresize()<CR>
-nnoremap <C-k> <C-w>k:call Splitresize()<CR>
-nnoremap <C-l> <C-w>l:call Splitresize()<CR>
+nnoremap <C-h> <C-w>h<CR>
+nnoremap <C-j> <C-w>j<CR>
+nnoremap <C-k> <C-w>k<CR>
+nnoremap <C-l> <C-w>l<CR>
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da

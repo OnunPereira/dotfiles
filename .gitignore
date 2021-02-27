@@ -2,3 +2,4 @@ nvim/.config/nvim/autoload/*
 nvim/.config/nvim/.netrwhist
 fish/.config/fish/fish_variables
 **/*.log
+vscode/*/extensions/*

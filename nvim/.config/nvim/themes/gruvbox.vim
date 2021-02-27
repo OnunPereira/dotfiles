@@ -12,11 +12,21 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename' ] ],
       \ },
+      \ 'tabline': {
+      \   'left': [ ['buffers'] ],
+      \   'right': [ ['close'] ]
+      \ },
       \ 'component': {
       \   'lineinfo': '%3l:%-2v%<',
       \ },
       \ 'component_function': {
       \   'filename': 'LightlineFilename',
+      \ },
+      \ 'component_expand': {
+      \   'buffers': 'lightline#bufferline#buffers'
+      \ },
+      \ 'component_type': {
+      \   'buffers': 'tabsel'
       \ },
       \ 'mode_map': {
         \ 'n' : 'N ',
@@ -38,3 +48,4 @@ function! LightlineFilename()
   let modified = &modified ? ' +' : ''
   return filename . modified
 endfunction
+

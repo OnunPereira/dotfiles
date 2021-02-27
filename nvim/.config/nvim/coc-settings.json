@@ -1,10 +1,5 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "css",
     "markdown",
     "graphql",
     "yaml",
@@ -12,6 +7,8 @@
     "python",
     "rust"
   ],
+  "eslint.autoFixOnSave": true,
+  "explorer.position": "right",
   "explorer.file.showHiddenFiles": true,
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
@@ -21,5 +18,5 @@
     "v": "open:vsplit"
   },
   "prettier.eslintIntegration": true,
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets"
 }

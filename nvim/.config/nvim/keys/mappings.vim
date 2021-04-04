@@ -43,3 +43,5 @@ nnoremap <C-l> <C-w>l<CR>
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+nnoremap <Esc> :nohlsearch<CR>

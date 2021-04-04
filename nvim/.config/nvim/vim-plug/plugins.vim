@@ -30,12 +30,18 @@ call plug#begin('$HOME/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
+    " Zettelkasten method
+    Plug 'KevinBockelandt/notoire'
 
     " Themes
+    
+    " Nord
     " Plug 'arcticicestudio/nord-vim'
+    
+    " One Half Atom
     " Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    
+    " Gruvbox
     Plug 'morhetz/gruvbox'
-
-    " Language specific
 
 call plug#end()

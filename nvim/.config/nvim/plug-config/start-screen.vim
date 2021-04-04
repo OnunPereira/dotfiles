@@ -7,5 +7,5 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
             \ '~/Projects',
             \ { 'v': '~/dotfiles/nvim/.config/nvim/init.vim' },
-            \ { 'f': '~/dotfiles/fish/.config/fish/fish.conf' },
+            \ { 'f': '~/dotfiles/fish/.config/fish/config.fish' },
             \ ]

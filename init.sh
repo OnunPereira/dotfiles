@@ -1,11 +1,19 @@
-### DEFAULT SHELL SETUP ###
+#!/bin/bash
 
-# Grant access to /etc/shells
-sudo chmod 777 /etc/shells
-$EDITOR /etc/shells
+# Ask for the administrator password upfront
+sudo -v
 
-# Inside vim, remove all unnecessary shells and add /usr/local/bin/fish
+# Create .zshenv to prepare for zsh config folder
+if [ ! -f $HOME/.zshenv ]; then
+    touch $HOME/.zshenv
+    echo 'ZDOTDIR=$HOME/.config/zsh' > $HOME/.zshenv
+    echo 'Created .zshenv file inside home folder'
+fi
 
-chsh -s /usr/local/bin/fish
+# Install binaries and apps
+source ./scripts/brew.sh
 
-#-- DEFAULT SHELL SETUP --#
+# Stow dotfiles on home directory
+source ./scripts/stow.sh
+
+echo '\nScript run successfully!'

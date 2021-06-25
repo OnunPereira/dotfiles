@@ -1,0 +1,32 @@
+# Install utils
+brew "coreutils"
+brew "stow"
+brew "git"
+brew "fnm"
+brew "yarn"
+brew "exa"
+brew "bat"
+brew "fzf"
+brew "ripgrep"
+brew "fd"
+brew "zoxide"
+brew "starship"
+brew "tmux"
+brew "tmuxinator"
+
+# Install fonts
+tap "homebrew/cask-fonts"
+cask "font-hack-nerd-font"
+cask "font-fira-code"
+cask "font-cascadia-code"
+
+# Install apps
+cask "iterm2"
+cask "google-chrome"
+cask "visual-studio-code"
+cask "firefox"
+cask "keka"
+cask "flux"
+cask "flycut"
+cask "amethyst"
+cask "bitwarden"
